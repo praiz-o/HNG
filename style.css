@@ -108,6 +108,10 @@ section h2 {
     line-height: 1.5em;
 }
 
+.goals ul li{
+    text-align: justify;
+    line-height: 1.5em;
+}
 .info.container{
     display: flex;
     margin: 10px;
