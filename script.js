@@ -1,3 +1,4 @@
+// Function to update time and day
 function updateTimeAndDay() {
     const now = new Date();
     
@@ -15,6 +16,17 @@ function updateTimeAndDay() {
     document.querySelector('[data-testid="currentTimeUTC"]').textContent = currentTimeUTC;
     document.querySelector('[data-testid="currentDay"]').textContent = currentDay;
 }
+
+// Function to toggle navigation menu
+function toggleMenu() {
+    const navLinks = document.querySelector('nav ul');
+    navLinks.classList.toggle('active');
+}
+
+// Event listener for hamburger menu
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('header nav ul').classList.toggle('active');
+});
 
 // Update time and day immediately
 updateTimeAndDay();
